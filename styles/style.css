@@ -1,0 +1,13 @@
+header {
+    background-color: black;
+    color: white;
+    font-family: "Tangerine", sans-serif;
+}
+
+#inputs {
+    display: grid;
+    grid-template-rows: ;
+    width: 20%;
+    grid-gap: 10px;
+    margin: auto;
+}
