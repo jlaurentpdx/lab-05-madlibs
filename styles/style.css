@@ -4,6 +4,10 @@ header {
     font-family: "Tangerine", sans-serif;
 }
 
+body {
+    background-image: url(../assets/bill_of_rights.jpg);
+}
+
 #inputs {
     display: grid;
     grid-template-rows: ;
@@ -11,3 +15,8 @@ header {
     grid-gap: 10px;
     margin: auto;
 }
+
+.hidden {
+    display:none;
+}
+

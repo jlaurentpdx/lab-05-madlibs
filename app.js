@@ -1,5 +1,6 @@
 const submitButton = document.getElementById('submit');
 const amendments = document.getElementById('amendments');
+
 // First Amendment Input
 const noun1Input = document.getElementById('noun-1-input');
 const noun2Input = document.getElementById('noun-2-input');
@@ -38,21 +39,18 @@ const noun10Span = document.getElementById('noun-10-span');
 const nounInputList = [noun1Input, noun2Input, noun3Input, noun4Input, noun5Input, noun6Input, noun7Input, noun8Input, noun9Input, noun10Input];
 const nounSpanList = [noun1Span, noun2Span, noun3Span, noun4Span, noun5Span, noun6Span, noun7Span, noun8Span, noun9Span, noun10Span];
 
-const verbInputList = [];
-const verbSpanList = [];
+const verbInputList = [verb1Input, verb2Input];
+const verbSpanList = [verb1Span, verb2Span];
 
 submitButton.addEventListener('click', () => {
-    for (let i = 0; i < 11; i++) {
+    for (let i = 0; i < 10; i++) {
         nounSpanList[i].textContent = nounInputList[i].value;
     }
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
         verbSpanList[i].textContent = verbInputList[i].value;
     }
 
-
-    
     amendments.classList.remove('hidden');
-
 });
 
